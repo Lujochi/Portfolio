@@ -1,10 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
-
 :root {
   /* Colors */
   --c-body: #dddddd;
   --c-white: #ffffff;
-  --c-off-white: #f6f3fc;
+  --c-off-white: #e4e4e4;
   --c-black: #000000;
   --c-black-2: #050709;
   --c-black3: #5c6266;
@@ -14,7 +12,7 @@
   --c-theme-primary: #8750f7;
   --c-theme-primary-1: #2400ff;
   --c-theme-primary-2: #9b8dff;
-  --c-theme-primary-3: #4654f9;
+  --c-theme-primary-3: #29145a;
   --c-theme-secondary: #2a1454;
   --c-theme-accent-1: #0f0715;
   --c-theme-accent-2: #140c1c;
