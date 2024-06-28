@@ -30,7 +30,7 @@ body {
 }
 
 body {
-  font-family: var(--ff-body);
-  font-weight: var(--fw-normal);
-  font-size: var(--fz-body);
+  font-family: "Sora", sans-serif;
+  font-weight: normal;
+  background-color: var(--c-body);
 }
