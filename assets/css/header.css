@@ -23,18 +23,18 @@
   gap: 55px;
 }
 
-.main-container nav ul {
+.main-container .nav-header ul {
   display: flex;
   gap: 35px;
   list-style: none;
 }
 
-.main-container nav ul li a {
+.main-container .nav-header ul li a {
   color: var(--c-white);
   text-decoration: none;
 }
 
-.main-container nav ul li a:hover {
+.main-container .nav-header ul li a:hover {
   text-decoration: 4px overline var(--c-theme-primary);
 }
 

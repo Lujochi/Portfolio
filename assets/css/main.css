@@ -1,6 +1,149 @@
+/* Geral */
 .main-container {
   display: flex;
   flex-direction: column;
   max-width: 1600px;
   width: 100%;
+}
+
+.main-container section {
+  max-height: 100vh;
+}
+
+/* Home */
+.home-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+}
+
+.home-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 322px;
+  height: 308px;
+  border-radius: 50%;
+  background: var(--c-theme-primary);
+  background: linear-gradient(
+    260deg,
+    var(--c-theme-primary) 0%,
+    rgba(115, 67, 210, 0) 100%
+  );
+  filter: blur(150px);
+  margin-right: -5%;
+  margin-top: -5%;
+  z-index: -1;
+}
+
+.home-container .main-text-box {
+  display: flex;
+  flex-direction: column;
+  color: var(--c-off-white);
+}
+
+.main-text-box .main-text h2 {
+  font-size: 36px;
+}
+
+.main-text-box .main-text h1 {
+  font-size: 65px;
+  background: linear-gradient(
+    to right,
+    var(--c-theme-primary) 0%,
+    var(--c-white) 140%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 15px 0;
+}
+
+.main-text-box .main-text p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+  max-width: 550px;
+  width: 100%;
+}
+
+.main-text-box .nav-links {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav-links .download-cv {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links .download-cv a {
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 2px;
+  color: var(--c-theme-primary);
+  border-radius: 50px;
+  padding: 17px 35px;
+  border: 1px solid var(--c-theme-primary);
+  transition: 0.3s;
+}
+
+.nav-links .download-cv a:hover,
+.main-container .nav-links .social-links ul li a:hover {
+  color: var(--c-white);
+  background-color: var(--c-theme-primary);
+}
+
+.main-container .nav-links .social-links ul {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+}
+
+.main-container .nav-links .social-links ul li a {
+  text-decoration: none;
+  color: var(--c-theme-primary);
+  font-size: 22px;
+  border: 1px solid var(--c-theme-primary);
+  border-radius: 50%;
+  padding: 5px 8px;
+  transition: 0.3s;
+}
+
+.home-container .hero-box img {
+  position: relative;
+  border: 2px solid var(--c-theme-secondary);
+  border-radius: 38px;
+  transform: rotate(4.3deg);
+  transition: 0.3s;
+}
+
+.home-container .hero-box::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background: var(--c-theme-primary);
+  background: linear-gradient(
+    260deg,
+    var(--c-theme-primary) 0%,
+    rgba(115, 67, 210, 0) 100%
+  );
+  filter: blur(150px);
+  margin-left: -5%;
+  margin-bottom: -5%;
+  z-index: -1;
+}
+
+.home-container .hero-box img:hover {
+  border: 2px solid var(--c-theme-primary);
+  transform: rotate(0);
 }

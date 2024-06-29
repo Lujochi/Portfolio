@@ -34,7 +34,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--c-theme-accent-2);
+  background-color: var(--c-theme-accent-1);
   font-family: "Sora", sans-serif;
   font-weight: normal;
 }
