@@ -93,8 +93,7 @@
   transition: 0.3s;
 }
 
-.nav-links .download-cv a:hover,
-.main-container .nav-links .social-links ul li a:hover {
+.nav-links .download-cv a:hover {
   color: var(--c-white);
   background-color: var(--c-theme-primary);
 }
@@ -105,14 +104,39 @@
   gap: 16px;
 }
 
+.main-container .nav-links .social-links ul li:hover a::before {
+  transform: scale(1);
+}
+
+.main-container .nav-links .social-links ul li:hover a i::before {
+  color: var(--c-white);
+}
+
 .main-container .nav-links .social-links ul li a {
-  text-decoration: none;
   color: var(--c-theme-primary);
-  font-size: 22px;
+  width: 35px;
+  height: 35px;
   border: 1px solid var(--c-theme-primary);
   border-radius: 50%;
-  padding: 5px 8px;
-  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-decoration: none;
+}
+
+.main-container .nav-links .social-links ul li a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--c-theme-primary);
+  transform: scale(0);
+  transition: 0.3s ease-out;
+  border-radius: 50%;
+  z-index: -1;
 }
 
 .home-container .hero-box img {
