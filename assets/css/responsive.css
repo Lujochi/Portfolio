@@ -1,4 +1,4 @@
-@media (max-width: 1150px) {
+@media (max-width: 1024px) {
   .main-container .button-hire {
     margin-right: 50px;
   }
@@ -44,9 +44,13 @@
     background-color: var(--c-theme-primary-2);
     border-radius: 8px;
   }
+
+  .home-container .hero-box img {
+    display: none;
+  }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 768px) {
   .main-container .logo-box img {
     width: 60px;
   }
@@ -54,10 +58,6 @@
   .main-container .logo-box p,
   .main-container .box-links .button-hire {
     font-size: 14px;
-  }
-
-  .main-container .box-links .button-hire a {
-    padding: 10px 20px;
   }
 
   .main-container .box-links nav {
@@ -68,5 +68,27 @@
 @media (max-width: 475px) {
   .main-container .logo-box p {
     display: none;
+  }
+
+  .home-container .main-text-box {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .main-text-box .main-text h2 {
+    font-size: 22px;
+  }
+
+  .main-text-box .main-text h1 {
+    font-size: 32px;
+  }
+
+  .main-text-box .main-text p {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .nav-links .download-cv a {
+    font-size: 13px;
   }
 }

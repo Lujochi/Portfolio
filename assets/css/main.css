@@ -55,7 +55,7 @@
     var(--c-theme-primary) 0%,
     var(--c-white) 140%
   );
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin: 15px 0;
 }
