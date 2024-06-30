@@ -32,9 +32,13 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background-color: var(--c-theme-accent-1);
   font-family: "Sora", sans-serif;
   font-weight: normal;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid var(--c-grey-1);
+  border-bottom: none;
 }

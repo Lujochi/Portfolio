@@ -15,7 +15,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 80vh;
+  width: 100vw;
+  height: 90vh;
 }
 
 .home-container::before {
@@ -170,4 +171,121 @@
 .home-container .hero-box img:hover {
   border: 2px solid var(--c-theme-primary);
   transform: rotate(0);
+}
+
+/* Sobre */
+.main-container .about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--c-black-2);
+  color: var(--c-white);
+}
+
+/* .main-container .about-container a:hover .about::before {
+  transition: opacity 0.5s linear;
+  opacity: 0;
+  background: linear-gradient(
+    260deg,
+    var(--c-theme-secondary) 0%,
+    var(--c-theme-primary) 100%
+  );
+} */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+  padding: 35px;
+  gap: 25px;
+  border-radius: 20px;
+  background-color: var(--c-theme-accent-2);
+}
+
+.main-container .about h2,
+.education h2 {
+  font-size: 48px;
+  font-weight: bold;
+  background: linear-gradient(
+    to right,
+    var(--c-theme-primary) 0%,
+    var(--c-white) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about .img-about-hero img {
+  width: 150px;
+  border-radius: 8px;
+}
+
+.about .text-about p {
+  text-align: justify;
+  line-height: 25px;
+  letter-spacing: 1px;
+  hyphens: auto;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--c-white);
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 650px;
+  width: 100%;
+  padding: 35px;
+  gap: 25px;
+}
+
+.education h2 {
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+
+.time-line {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.box-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--c-theme-accent-2);
+  padding: 25px;
+  border-radius: 20px;
+  width: 500px;
+}
+
+.box-content:hover {
+  background: linear-gradient(
+    260deg,
+    var(--c-theme-secondary) 0%,
+    var(--c-theme-primary) 100%
+  );
+}
+
+.box-content:hover .years {
+  color: var(--c-white);
+}
+
+.time-line .box-content div {
+  color: var(--c-theme-primary);
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.time-line .box-content h3 {
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
