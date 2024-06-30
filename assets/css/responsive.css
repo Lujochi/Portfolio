@@ -48,6 +48,45 @@
   .home-container .hero-box img {
     display: none;
   }
+
+  .main-container .about {
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 400px;
+  }
+
+  .main-container .about h2 {
+    font-size: 36px;
+  }
+
+  .about .img-about-hero img {
+    width: 100px;
+  }
+
+  .about .text-about p {
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: normal;
+  }
+
+  .education .time-line {
+    margin-right: 20px;
+  }
+
+  .time-line .box-content div {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .time-line .box-content h3 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .time-line .box-content p {
+    font-weight: normal;
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -60,8 +99,27 @@
     font-size: 14px;
   }
 
+  .main-container header {
+    position: relative;
+  }
+
   .main-container .box-links nav {
-    top: 26px;
+    top: 0px;
+  }
+
+  .main-container .about-container {
+    flex-direction: column;
+    gap: 10%;
+    height: 200vh;
+  }
+
+  .about-container .about {
+    margin: 0;
+    width: 70%;
+  }
+
+  .education .time-line {
+    margin-right: 0;
   }
 }
 
@@ -90,5 +148,20 @@
 
   .nav-links .download-cv a {
     font-size: 13px;
+  }
+
+  .main-container .about-container {
+    flex-direction: column;
+    gap: 0;
+    height: 180vh;
+  }
+
+  .about-container .about {
+    margin: 0;
+    width: 80%;
+  }
+
+  .main-container .education {
+    width: 100%;
   }
 }
