@@ -35,14 +35,19 @@ class Carousel {
     }
     this.updateCarousel();
   }
-
   useControls() {
     const triggers = [...buttonsContainer.childNodes];
-    console.log(triggers);
     triggers.forEach((control) => {
       control.addEventListener("click", (e) => {
         e.preventDefault();
+
+        control.disabled = true;
+
         this.setCurrentState(control);
+
+        setTimeout(() => {
+          control.disabled = false;
+        }, 500);
       });
     });
   }
