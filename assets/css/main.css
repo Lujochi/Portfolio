@@ -273,6 +273,7 @@
   text-transform: uppercase;
 }
 
+/* Carrossel */
 #section-skills {
   background-color: var(--c-theme-accent-1);
   width: 100vw;
@@ -398,7 +399,7 @@
   color: var(--c-white);
 }
 
-.carousel .button-preview {
+.carousel .button-previous {
   left: 200px;
 }
 
@@ -407,17 +408,19 @@
 }
 
 .carousel-content .card-0 {
-  opacity: 1;
-  transform: translateZ(110px);
-  z-index: 2;
+  transform: translateX(-80%);
+  opacity: 0.4;
+  z-index: 3;
 }
 
 .carousel-content .card-1 {
-  left: 22%;
-  opacity: 0.4;
+  opacity: 1;
+  transform: translateZ(110px);
+  z-index: 5;
 }
 
 .carousel-content .card-2 {
-  right: 22%;
+  transform: translateX(80%);
   opacity: 0.4;
+  z-index: 3;
 }
