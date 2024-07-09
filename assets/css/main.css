@@ -21,13 +21,13 @@
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
-html,
-body {
-  min-height: 100%;
-  overflow-x: hidden;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
+  min-height: 100%;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   background-color: var(--c-theme-accent-1);
