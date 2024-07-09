@@ -2,8 +2,12 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100vw;
-  margin-top: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--c-theme-secondary);
+  z-index: 20;
 }
 
 /* Logo */
