@@ -1,54 +1,49 @@
-.main-container header {
+header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: var(--c-theme-secondary);
-  z-index: 20;
+  padding: 20px 50px;
 }
 
 /* Logo */
-.main-container .logo-box {
+.logo-box {
   display: flex;
   align-items: center;
 }
 
-.main-container .logo-box p {
+.logo-box p {
   color: var(--c-off-white);
   font-size: 18px;
   font-weight: 700;
 }
 
 /* Links */
-.main-container .box-links {
-  display: flex;
+.box-links {
+  display: inline-flex;
   gap: 55px;
 }
 
-.main-container .nav-header ul {
-  display: flex;
+.nav-header ul {
+  display: inline-flex;
   gap: 35px;
   list-style: none;
 }
 
-.main-container .nav-header ul li a {
+.nav-header ul li a {
   color: var(--c-white);
   font-size: 15px;
   font-weight: 500;
   text-decoration: none;
   position: relative;
-  padding: 12px 0;
+  padding: 13px 0;
 }
 
-.main-container .nav-header ul li:hover a::before {
+.nav-header ul li:hover a::before {
   transform-origin: left;
   transform: scaleX(1);
 }
 
-.main-container .nav-header ul li a::before {
+.nav-header ul li a::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -67,7 +62,7 @@
   transition: transform 0.3s ease-in-out;
 }
 
-.main-container .button-hire a {
+.button-hire a {
   text-decoration: none;
   color: var(--c-white);
   font-weight: bold;
