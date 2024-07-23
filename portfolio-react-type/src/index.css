@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--c-theme-accent-1);
+}
+
+section {
+  height: 100vh;
+  align-content: center;
+  margin: 0 auto;
+}
