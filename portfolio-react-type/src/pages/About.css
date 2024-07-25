@@ -1,0 +1,85 @@
+#AboutPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--c-black-2);
+  color: var(--c-white);
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  padding: 40px;
+  gap: 25px;
+  margin-right: 100px;
+  border-radius: 20px;
+  background-color: var(--c-theme-accent-2);
+}
+
+.about h2 {
+  font-size: 48px;
+  font-weight: bold;
+  background: linear-gradient(
+    to right,
+    var(--c-theme-primary) 0%,
+    var(--c-white) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.img-about-hero img {
+  width: 150px;
+  border-radius: 8px;
+}
+
+.text-about p {
+  text-align: justify;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  hyphens: auto;
+  font-size: 18px;
+  color: var(--c-white);
+}
+
+.education {
+  width: 600px;
+  padding: 20px 30px;
+}
+
+.box-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--c-theme-accent-2);
+  padding: 25px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.box-content:hover {
+  background: linear-gradient(
+    260deg,
+    var(--c-theme-secondary) 0%,
+    var(--c-theme-primary) 100%
+  );
+}
+
+.box-content:hover .years {
+  color: var(--c-white);
+}
+
+.box-content div {
+  color: var(--c-theme-primary);
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.box-content h3 {
+  font-size: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+}

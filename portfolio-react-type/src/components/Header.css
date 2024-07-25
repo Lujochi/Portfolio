@@ -1,8 +1,16 @@
 header {
+  position: fixed;
+  top: 0;
+  left: 160px;
+  right: 160px;
+  background-color: var(--c-theme-accent-1);
+  border-bottom: 1px solid var(--c-theme-primary);
+  border-radius: 8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding: 20px;
+  z-index: 10;
 }
 
 header nav ul {
@@ -124,12 +132,6 @@ header nav input:checked ~ label .hamburger::after {
   bottom: 0;
 }
 
-@media (max-width: 1650px) {
-  header {
-    padding: 20px 135px;
-  }
-}
-
 @media (max-width: 1250px) {
   header nav .menu {
     display: block;
@@ -168,42 +170,36 @@ header nav input:checked ~ label .hamburger::after {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 15px;
-    right: 135px;
+    top: 13px;
+    right: 0;
     z-index: 1;
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
   header {
-    padding: 20px;
-  }
-
-  header nav {
-    position: relative;
-    top: 0;
-    right: 0;
-  }
-
-  header nav .menu {
-    position: absolute;
-    top: -35px;
-    right: 0px;
-  }
-
-  header nav label {
-    position: absolute;
-  }
-
-  header nav input:checked ~ ul {
-    position: absolute;
-    top: 25px;
-    right: 5px;
+    left: 100px;
+    right: 100px;
   }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 768px) {
   header {
-    padding: 20px 5px;
+    left: 50px;
+    right: 50px;
+  }
+}
+
+@media (max-width: 425px) {
+  header {
+    left: 25px;
+    right: 25px;
+  }
+}
+
+@media (max-width: 375px) {
+  header {
+    left: 5px;
+    right: 5px;
   }
 }

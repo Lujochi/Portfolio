@@ -8,17 +8,15 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--c-theme-primary) var(--c-theme-secondary);
 }
 
 body {
-  max-width: 1600px;
-  width: 100%;
-  margin: 0 auto;
   background-color: var(--c-theme-accent-1);
 }
 
 section {
   height: 100vh;
-  align-content: center;
-  margin: 0 auto;
+  padding: 180px;
 }
