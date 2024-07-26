@@ -1,0 +1,138 @@
+.skills-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-title h2 {
+  font-size: 48px;
+  font-weight: bold;
+  background: linear-gradient(
+    to right,
+    var(--c-theme-primary) 0%,
+    var(--c-white) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  height: 600px;
+  margin: 30px auto;
+  perspective: 1000px;
+}
+
+.carousel-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.5s ease-in-out;
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 100%;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 330px;
+  height: 520px;
+  padding: 12px;
+  border-radius: 10px;
+  background: url("../src/assets/img/bg-cards.png") center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 0;
+  transform-origin: center;
+}
+
+.cards h3 {
+  background-color: var(--c-title-card);
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 10px 10px 0 0;
+  color: var(--c-white);
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.cards img {
+  width: 100%;
+  max-height: 280px;
+}
+
+.description {
+  background-color: var(--c-description-card);
+  border-radius: 0 0 10px 10px;
+}
+
+.description h4 {
+  background-color: var(--c-grey-4);
+  font-size: 20px;
+  color: var(--c-white);
+  padding: 12px;
+}
+
+.description p {
+  font-size: 14px;
+  padding: 12px;
+  text-align: justify;
+  max-height: 110px;
+  overflow-y: auto;
+  hyphens: auto;
+}
+
+.btn-arrow {
+  position: absolute;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--c-theme-primary);
+  border-radius: 50%;
+  color: var(--c-theme-primary);
+  transition: 0.3s;
+  z-index: 10;
+  background: transparent;
+}
+
+.btn-arrow:hover {
+  background: var(--c-theme-primary);
+  color: var(--c-white);
+}
+
+.button-previous {
+  left: 200px;
+}
+
+.button-next {
+  right: 200px;
+}
+
+.card-0 {
+  transform: translateX(-80%);
+  opacity: 0.4;
+  z-index: 3;
+}
+
+.card-1 {
+  opacity: 1;
+  transform: translateZ(110px);
+  z-index: 5;
+}
+
+.card-2 {
+  transform: translateX(80%);
+  opacity: 0.4;
+  z-index: 3;
+}

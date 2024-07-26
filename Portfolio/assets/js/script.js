@@ -3,7 +3,7 @@ const buttonsContainer = document.querySelector(".controlls");
 const cards = document.querySelectorAll(".cards");
 
 class Carousel {
-  constructor(container, cards) {
+  constructor(container , cards) {
     this.carouselContainer = container;
     this.carouselArray = [...cards];
   }
